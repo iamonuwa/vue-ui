@@ -1,0 +1,42 @@
+{
+  "name": "vue-starter-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:bundle": "vue-cli-service build --target lib --name vue-starter-ui src/main.ts",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "main": "dist/vue-starter-ui.common.js",
+  "dependencies": {
+    "animejs": "^2.2.0",
+    "js-cookie": "^2.2.0",
+    "marked": "^0.5.0",
+    "vee-validate": "^2.1.0-beta.7",
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.0.0",
+    "vue-i18n": "^8.0.0",
+    "vue-property-decorator": "^7.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.0",
+    "@types/mocha": "^5.2.5",
+    "@vue/cli-plugin-babel": "^3.0.0",
+    "@vue/cli-plugin-typescript": "^3.0.0",
+    "@vue/cli-plugin-unit-mocha": "^3.0.0",
+    "@vue/cli-service": "^3.0.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "axios": "^0.18.0",
+    "chai": "^4.1.2",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "typescript": "^3.0.0",
+    "vue-cli-plugin-axios": "0.0.4",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
