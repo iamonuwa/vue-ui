@@ -18,7 +18,7 @@
                         @click="rowClick" />
 
     <div :class="$style.noResults" v-show="count === 0">
-      {{ $t('components.dataTable.noResults' /* No results found! */) }}
+      {{ t('components.dataTable.noResults' /* No results found! */) }}
     </div>
 
     <br />
@@ -155,6 +155,8 @@
     },
     data(): any {
       return {
+        t: window['$t'].bind(window['i18n']),
+
         sortKey:       null,
         sortDirection: 'asc',
         currentPage:   0,

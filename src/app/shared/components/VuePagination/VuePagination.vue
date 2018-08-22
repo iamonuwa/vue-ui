@@ -3,7 +3,7 @@
     <div :class="prevCssClasses"
          role="button"
          tabindex="0"
-         aria-label="$t('components.pagination.previous' /* Previous */)"
+         aria-label="t('components.pagination.previous' /* Previous */)"
          @click="prevClick"
          @keypress="prevClick"></div>
     <div :class="$style.label">
@@ -12,7 +12,7 @@
     <div :class="nextCssClasses"
          role="button"
          tabindex="0"
-         aria-label="$t('components.pagination.next' /* Next */)"
+         aria-label="t('components.pagination.next' /* Next */)"
          @click="nextClick"
          @keypress="nextClick"></div>
   </div>
@@ -31,6 +31,12 @@
         required: true,
       },
     },
+    data(): any {
+      return {
+        t: window['$t'].bind(window['i18n']),
+      };
+    },
+
     computed: {
       prevCssClasses() {
         const classes = [this.$style.prev];

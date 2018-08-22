@@ -2,13 +2,13 @@
   <div :class="$style.calendar">
     <div :class="$style.header">
       <h4 @click="setSelecting('year')">{{ selectedYear }}</h4>
-      <h5 @click="setSelecting('date')">{{ $d(calculatedDate, 'calendarHeader') }}</h5>
+      <h5 @click="setSelecting('date')">{{ d(calculatedDate, 'calendarHeader') }}</h5>
     </div>
 
     <div :class="$style.body" v-if="selecting === 'date'">
       <div :class="$style.date">
         <div :class="$style.arrow" @click="setByMonth(currentMonth - 1)"></div>
-        <div :class="$style.currentDate">{{ $d(new Date(currentYear, currentMonth, 1), 'calendarNav') }}</div>
+        <div :class="$style.currentDate">{{ d(new Date(currentYear, currentMonth, 1), 'calendarNav') }}</div>
         <div :class="$style.arrow" @click="setByMonth(currentMonth + 1)"></div>
       </div>
 
@@ -58,6 +58,8 @@
   import chunk     from 'lodash/chunk';
 
   interface IData {
+    d: any,
+    t: any,
     selecting: string,
     currentMonth: number,
     currentYear: number,
@@ -185,13 +187,13 @@
       },
       weekdays(): string[] {
         const weekdays: string[] = [
-          this.$t('components.calendar.sunday.short' /* S */),
-          this.$t('components.calendar.monday.short' /* M */),
-          this.$t('components.calendar.tuesday.short' /* T */),
-          this.$t('components.calendar.wednesday.short' /* W */),
-          this.$t('components.calendar.thursday.short' /* T */),
-          this.$t('components.calendar.friday.short' /* F */),
-          this.$t('components.calendar.saturday.short' /* S */),
+          this.t('components.calendar.sunday.short' /* S */),
+          this.t('components.calendar.monday.short' /* M */),
+          this.t('components.calendar.tuesday.short' /* T */),
+          this.t('components.calendar.wednesday.short' /* W */),
+          this.t('components.calendar.thursday.short' /* T */),
+          this.t('components.calendar.friday.short' /* F */),
+          this.t('components.calendar.saturday.short' /* S */),
         ];
         const orderedDays: string[] = [];
         let startDay: number = this.firstDayOfWeek;
@@ -215,6 +217,8 @@
     data(): IData {
       return {
         selecting:         'date',
+        d: window['$d'].bind(window['i18n']),
+        t: window['$t'].bind(window['i18n']),
         currentMonth:      null,
         currentYear:       null,
         selectedDayOfWeek: null,

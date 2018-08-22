@@ -52,7 +52,7 @@
           placeholder="Zip code"
           v-model="form.zipCode"
           validation="required|integer"
-          :error-message="$t('components.formExample.zipCode.error' /* Please enter a Number */)"
+          :error-message="t('components.formExample.zipCode.error' /* Please enter a Number */)"
           :disabled="addressDisabled" />
       </vue-grid-item>
     </vue-grid-row>
@@ -136,6 +136,8 @@
     components:    { VueButton, VueGridItem, VueGridRow, VueCheckbox, VueSelect, VueInput },
     data(): any {
       return {
+        t: window['$t'].bind(window['i18n']),
+
         form:           {
           firstname:   '',
           lastname:    '',

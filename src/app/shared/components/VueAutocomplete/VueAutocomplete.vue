@@ -34,7 +34,7 @@
       v-show="isOpen === true && isLoading === false">
 
       <li v-if="hasOptions === false"
-          v-html="$t('components.autocomplete.emptyMessage' /* No options found for %s */).replace('%s', searchQuery)"></li>
+          v-html="t('components.autocomplete.emptyMessage' /* No options found for %s */).replace('%s', searchQuery)"></li>
 
       <li
         role="option"
@@ -114,6 +114,8 @@
     },
     data(): any {
       return {
+        t: window['$t'].bind(window['i18n']),
+
         isOpen:                false,
         searchQuery:           '',
         previousQuery:         '',

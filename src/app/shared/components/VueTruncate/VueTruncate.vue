@@ -13,13 +13,13 @@
     <a v-show="isTruncated && showMoreButton"
        href="#"
        @click.prevent="showMore">
-      {{ $t('components.truncate.showMore' /* Show more */) }}
+      {{ t('components.truncate.showMore' /* Show more */) }}
     </a>
 
     <a v-show="isTruncated && !showMoreButton"
        href="#"
        @click.prevent="showLess">
-      {{ $t('components.truncate.showLess' /* Show less */) }}
+      {{ t('components.truncate.showLess' /* Show less */) }}
     </a>
   </div>
 </template>
@@ -48,6 +48,8 @@
     },
     data(): any {
       return {
+        t: window['$t'].bind(window['i18n']),
+
         offsetHeight:    0,
         collapsedHeight: 0,
         lineHeight:      0,
