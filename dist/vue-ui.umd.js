@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["vue-starter-ui"] = factory(require("vue"));
+		exports["vue-ui"] = factory(require("vue"));
 	else
-		root["vue-starter-ui"] = factory(root["Vue"]);
+		root["vue-ui"] = factory(root["Vue"]);
 })((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__8bbf__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -230,7 +230,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueDateRangePicker":"VueDateRangePicker-vue_vueDateRangePicker_2p852"};
+module.exports = {"vueDateRangePicker":"VueDateRangePicker_vueDateRangePicker_F7jFO"};
 
 /***/ }),
 
@@ -238,7 +238,7 @@ module.exports = {"vueDateRangePicker":"VueDateRangePicker-vue_vueDateRangePicke
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"loader":"VueLoader-vue_loader_o7jA3","medium":"VueLoader-vue_medium_1mlsU","large":"VueLoader-vue_large_3xW1C","primary":"VueLoader-vue_primary_3eSwW","path":"VueLoader-vue_path_R5bxe","accent":"VueLoader-vue_accent_3qukg","warn":"VueLoader-vue_warn_3tNtW","circle":"VueLoader-vue_circle_JRa2l","rotate":"VueLoader-vue_rotate_1o_4K","dash":"VueLoader-vue_dash_1fSQ2"};
+module.exports = {"loader":"VueLoader_loader_3sOul","medium":"VueLoader_medium_2B69l","large":"VueLoader_large_2bhCp","primary":"VueLoader_primary_Dz731","path":"VueLoader_path_PJpkV","accent":"VueLoader_accent_2LdGi","warn":"VueLoader_warn_3AOxn","circle":"VueLoader_circle_1p7J8","rotate":"VueLoader_rotate_1w7C-","dash":"VueLoader_dash_1t03x"};
 
 /***/ }),
 
@@ -274,7 +274,7 @@ function isSlowBuffer (obj) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vuePanelHeader":"VuePanelHeader-vue_vuePanelHeader_1gict","withImage":"VuePanelHeader-vue_withImage_CU7hi","title":"VuePanelHeader-vue_title_37iVe","subtitle":"VuePanelHeader-vue_subtitle_2D3wn"};
+module.exports = {"vuePanelHeader":"VuePanelHeader_vuePanelHeader_bQPTP","withImage":"VuePanelHeader_withImage_3M1KY","title":"VuePanelHeader_title_15601","subtitle":"VuePanelHeader_subtitle_2b9Of"};
 
 /***/ }),
 
@@ -386,7 +386,7 @@ module.exports = Axios;
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueCarousel":"VueCarousel-vue_vueCarousel_2RRqe","image":"VueCarousel-vue_image_QkIL6","copyright":"VueCarousel-vue_copyright_iATzy","indicator":"VueCarousel-vue_indicator_DuGwc","active":"VueCarousel-vue_active_2gGPb"};
+module.exports = {"vueCarousel":"VueCarousel_vueCarousel_15vjR","image":"VueCarousel_image_14QPy","copyright":"VueCarousel_copyright_1XcyZ","indicator":"VueCarousel_indicator_1QjDb","active":"VueCarousel_active_1Wrm5"};
 
 /***/ }),
 
@@ -2041,7 +2041,7 @@ if (true) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueTruncate":"VueTruncate-vue_vueTruncate_21c8A","text":"VueTruncate-vue_text_3bmNG","fadeOut":"VueTruncate-vue_fadeOut_1Fx_A"};
+module.exports = {"vueTruncate":"VueTruncate_vueTruncate_3TXKO","text":"VueTruncate_text_1VaRv","fadeOut":"VueTruncate_fadeOut_2UF5a"};
 
 /***/ }),
 
@@ -2056,7 +2056,7 @@ module.exports = {"vueTruncate":"VueTruncate-vue_vueTruncate_21c8A","text":"VueT
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueTabGroup":"VueTabGroup-vue_vueTabGroup_2Yt-r","headerList":"VueTabGroup-vue_headerList_Wz0Iu","bg":"VueTabGroup-vue_bg_2_gGf","active":"VueTabGroup-vue_active_25YEp","title":"VueTabGroup-vue_title_21Xcy","body":"VueTabGroup-vue_body_3nnb-"};
+module.exports = {"vueTabGroup":"VueTabGroup_vueTabGroup_2bUZ0","headerList":"VueTabGroup_headerList_1iOo1","bg":"VueTabGroup_bg_3LaHj","active":"VueTabGroup_active_2D5hx","title":"VueTabGroup_title_3HKyU","body":"VueTabGroup_body_3P3LA"};
 
 /***/ }),
 
@@ -2163,7 +2163,7 @@ module.exports = __webpack_require__("9e1e") ? Object.defineProperties : functio
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueDatePicker":"VueDatePicker-vue_vueDatePicker_3vaAj","calendar":"VueDatePicker-vue_calendar_3iQxN"};
+module.exports = {"vueDatePicker":"VueDatePicker_vueDatePicker_22SJq","calendar":"VueDatePicker_calendar_3mLvj"};
 
 /***/ }),
 
@@ -2262,7 +2262,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueToggle":"VueToggle-vue_vueToggle_2izOk","container":"VueToggle-vue_container_2kj4K","handle":"VueToggle-vue_handle_33--n","checked":"VueToggle-vue_checked_1y-Al","focus":"VueToggle-vue_focus_2LGhr","disabled":"VueToggle-vue_disabled_1XrJm"};
+module.exports = {"vueToggle":"VueToggle_vueToggle_1Fiyt","container":"VueToggle_container_whl36","handle":"VueToggle_handle_3biVH","checked":"VueToggle_checked_3Esbd","focus":"VueToggle_focus_3dZIz","disabled":"VueToggle_disabled_2OSdJ"};
 
 /***/ }),
 
@@ -2556,7 +2556,7 @@ module.exports = defaults;
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueAccordionItem":"VueAccordionItem-vue_vueAccordionItem_1qmr4","header":"VueAccordionItem-vue_header_3k5Kb","icon":"VueAccordionItem-vue_icon_2iaqi","open":"VueAccordionItem-vue_open_1vJFS","body":"VueAccordionItem-vue_body_2aah_"};
+module.exports = {"vueAccordionItem":"VueAccordionItem_vueAccordionItem_35fYF","header":"VueAccordionItem_header_1UFHS","icon":"VueAccordionItem_icon_1wKlY","open":"VueAccordionItem_open_H7a_R","body":"VueAccordionItem_body_2nWGU"};
 
 /***/ }),
 
@@ -3672,7 +3672,7 @@ module.exports = function (it) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueAccordion":"VueAccordion-vue_vueAccordion_nfmCS"};
+module.exports = {"vueAccordion":"VueAccordion_vueAccordion_1Sl36"};
 
 /***/ }),
 
@@ -4410,7 +4410,7 @@ module.exports = function (it) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueSlider":"VueSlider-vue_vueSlider_2RXkq","track":"VueSlider-vue_track_2b2cL","disabled":"VueSlider-vue_disabled_3qYbM","progress":"VueSlider-vue_progress_18LJY","handle":"VueSlider-vue_handle_3IqLI","active":"VueSlider-vue_active_2PGnU","values":"VueSlider-vue_values_xiwYA","multi":"VueSlider-vue_multi_3ug5_"};
+module.exports = {"vueSlider":"VueSlider_vueSlider_WuOtB","track":"VueSlider_track_3Wer3","disabled":"VueSlider_disabled_1oUqT","progress":"VueSlider_progress_1GWZP","handle":"VueSlider_handle_1Luaj","active":"VueSlider_active_2ue-t","values":"VueSlider_values_3f_hH","multi":"VueSlider_multi_piUnH"};
 
 /***/ }),
 
@@ -4418,7 +4418,7 @@ module.exports = {"vueSlider":"VueSlider-vue_vueSlider_2RXkq","track":"VueSlider
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vuePanelFooter":"VuePanelFooter-vue_vuePanelFooter_1d2CP"};
+module.exports = {"vuePanelFooter":"VuePanelFooter_vuePanelFooter_31e0D"};
 
 /***/ }),
 
@@ -4512,7 +4512,7 @@ __webpack_require__("9c6c")('fill');
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueBadge":"VueBadge-vue_vueBadge_KdhVr","primary":"VueBadge-vue_primary_3LRzA","accent":"VueBadge-vue_accent_3ktD6","warn":"VueBadge-vue_warn_1TzzK"};
+module.exports = {"vueBadge":"VueBadge_vueBadge_2Pyz1","primary":"VueBadge_primary_2SqYS","accent":"VueBadge_accent_vR1sU","warn":"VueBadge_warn_S_Gsb"};
 
 /***/ }),
 
@@ -4557,7 +4557,7 @@ module.exports = function (index, length) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueGridRow":"VueGridRow-vue_vueGridRow_1-0iy"};
+module.exports = {"vueGridRow":"VueGridRow_vueGridRow_39QYv"};
 
 /***/ }),
 
@@ -4698,7 +4698,7 @@ module.exports = (
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"calendar":"VueCalendar-vue_calendar_zxoXI","header":"VueCalendar-vue_header_2yLag","body":"VueCalendar-vue_body_1rbYa","date":"VueCalendar-vue_date_3ENre","arrow":"VueCalendar-vue_arrow_3pd_e","currentDate":"VueCalendar-vue_currentDate_1mVYL","currentDay":"VueCalendar-vue_currentDay_3YGpp","selectedDay":"VueCalendar-vue_selectedDay_3HAhk","disabledDay":"VueCalendar-vue_disabledDay_UoJdA","year":"VueCalendar-vue_year_1OcbY","selected":"VueCalendar-vue_selected_1JJlX","footer":"VueCalendar-vue_footer_34_sb"};
+module.exports = {"calendar":"VueCalendar_calendar_1ByV_","header":"VueCalendar_header_1cpBQ","body":"VueCalendar_body_zmsti","date":"VueCalendar_date_FuKn6","arrow":"VueCalendar_arrow_1Lelp","currentDate":"VueCalendar_currentDate_5i8tw","currentDay":"VueCalendar_currentDay_1y_x5","selectedDay":"VueCalendar_selectedDay_3w--2","disabledDay":"VueCalendar_disabledDay_2IcbT","year":"VueCalendar_year_Jxo5_","selected":"VueCalendar_selected_2Ybvy","footer":"VueCalendar_footer_24sMt"};
 
 /***/ }),
 
@@ -4856,7 +4856,7 @@ module.exports = {};
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueInput":"VueInput-vue_vueInput_1RYl3","hasValue":"VueInput-vue_hasValue_1jdO4","bar":"VueInput-vue_bar_1LpDP","error":"VueInput-vue_error_13ErZ","message":"VueInput-vue_message_2hwji","disabled":"VueInput-vue_disabled_3fN1K"};
+module.exports = {"vueInput":"VueInput_vueInput_3g4Xc","hasValue":"VueInput_hasValue_3lOBd","bar":"VueInput_bar_2Cd_2","error":"VueInput_error_345i9","message":"VueInput_message_W_765","disabled":"VueInput_disabled_3PbS0"};
 
 /***/ }),
 
@@ -4864,7 +4864,7 @@ module.exports = {"vueInput":"VueInput-vue_vueInput_1RYl3","hasValue":"VueInput-
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueModal":"VueModal-vue_vueModal_238ll","fitContent":"VueModal-vue_fitContent_2J-ua"};
+module.exports = {"vueModal":"VueModal_vueModal_24SIL","fitContent":"VueModal_fitContent_2S_U8"};
 
 /***/ }),
 
@@ -5402,7 +5402,7 @@ module.exports = navigator && navigator.userAgent || '';
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vuePanel":"VuePanel-vue_vuePanel_8DKhL"};
+module.exports = {"vuePanel":"VuePanel_vuePanel_2tdxH"};
 
 /***/ }),
 
@@ -5582,7 +5582,7 @@ for (var collections = getKeys(DOMIterables), i = 0; i < collections.length; i++
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueDataTableSearch":"VueDataTableSearch-vue_vueDataTableSearch_O63Cc"};
+module.exports = {"vueDataTableSearch":"VueDataTableSearch_vueDataTableSearch_2rvbI"};
 
 /***/ }),
 
@@ -5829,7 +5829,7 @@ module.exports = isLength;
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vuePanelBody":"VuePanelBody-vue_vuePanelBody_rhn2s"};
+module.exports = {"vuePanelBody":"VuePanelBody_vuePanelBody_dGiAS"};
 
 /***/ }),
 
@@ -6098,7 +6098,7 @@ module.exports = function xhrAdapter(config) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"gridItem":"VueGridItem-vue_gridItem_2QlrL","fill":"VueGridItem-vue_fill_1BTsY"};
+module.exports = {"gridItem":"VueGridItem_gridItem_3U0kM","fill":"VueGridItem_fill__DiR0"};
 
 /***/ }),
 
@@ -6106,7 +6106,7 @@ module.exports = {"gridItem":"VueGridItem-vue_gridItem_2QlrL","fill":"VueGridIte
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueSelect":"VueSelect-vue_vueSelect_1gqVw","icon":"VueSelect-vue_icon_1E_x-","multiple":"VueSelect-vue_multiple_2odVm","disabled":"VueSelect-vue_disabled_3EjNM","error":"VueSelect-vue_error_3WbBc"};
+module.exports = {"vueSelect":"VueSelect_vueSelect_1pbtk","icon":"VueSelect_icon_3jA6n","multiple":"VueSelect_multiple_2u0kH","disabled":"VueSelect_disabled_3Fpge","error":"VueSelect_error_nT4P8"};
 
 /***/ }),
 
@@ -6162,7 +6162,7 @@ module.exports = function (it) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"button":"VueButton-vue_button_2oqIh","primary":"VueButton-vue_primary_3UO3h","accent":"VueButton-vue_accent_lEnU7","warn":"VueButton-vue_warn_2meEB","disabled":"VueButton-vue_disabled_1N0fs","pulse":"VueButton-vue_pulse_31Y27","loading-animation":"VueButton-vue_loading-animation_xIH0B","ripple":"VueButton-vue_ripple_I1Vz_"};
+module.exports = {"button":"VueButton_button_1uOsK","primary":"VueButton_primary_343VQ","accent":"VueButton_accent_C1ZT_","warn":"VueButton_warn_290bO","disabled":"VueButton_disabled_10UEr","pulse":"VueButton_pulse_3gn2K","loading-animation":"VueButton_loading-animation_ttg1s","ripple":"VueButton_ripple_3yAU1"};
 
 /***/ }),
 
@@ -6212,7 +6212,7 @@ module.exports = isIndex;
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueDataTableHeader":"VueDataTableHeader-vue_vueDataTableHeader_2Nz78","column":"VueDataTableHeader-vue_column_xuXZv"};
+module.exports = {"vueDataTableHeader":"VueDataTableHeader_vueDataTableHeader_KkHHn","column":"VueDataTableHeader_column_1noUe"};
 
 /***/ }),
 
@@ -6744,7 +6744,7 @@ module.exports = !__webpack_require__("9e1e") && !__webpack_require__("79e5")(fu
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"grid":"VueGrid-vue_grid_1arX3"};
+module.exports = {"grid":"VueGrid_grid_1hERg"};
 
 /***/ }),
 
@@ -6969,7 +6969,7 @@ module.exports.default = axios;
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"checkbox":"VueCheckbox-vue_checkbox_2LpRv","box":"VueCheckbox-vue_box_1vrD9","radio":"VueCheckbox-vue_radio_2ZWEs","disabled":"VueCheckbox-vue_disabled_2sL_Q"};
+module.exports = {"checkbox":"VueCheckbox_checkbox_2MeOx","box":"VueCheckbox_box_wMOiy","radio":"VueCheckbox_radio_3t3ih","disabled":"VueCheckbox_disabled_2noay"};
 
 /***/ }),
 
@@ -7060,7 +7060,7 @@ module.exports = function isAbsoluteURL(url) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueAutocomplete":"VueAutocomplete-vue_vueAutocomplete_2h7D6","loader":"VueAutocomplete-vue_loader_4fnTi","isSelected":"VueAutocomplete-vue_isSelected_GP00n"};
+module.exports = {"vueAutocomplete":"VueAutocomplete_vueAutocomplete_2D3v8","loader":"VueAutocomplete_loader_2O9b-","isSelected":"VueAutocomplete_isSelected_1Xrpd"};
 
 /***/ }),
 
@@ -7312,7 +7312,7 @@ var substr = 'ab'.substr(-1) === 'b'
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueTooltip":"VueTooltip-vue_vueTooltip_2Pmqz","show":"VueTooltip-vue_show_1Iqip","highlight":"VueTooltip-vue_highlight_1HSxP"};
+module.exports = {"vueTooltip":"VueTooltip_vueTooltip_3DSTp","show":"VueTooltip_show_2GRB4","highlight":"VueTooltip_highlight_3UjMA"};
 
 /***/ }),
 
@@ -7363,7 +7363,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"enterActive":"FadeAnimation-vue_enterActive_EhIaQ","leaveActive":"FadeAnimation-vue_leaveActive_sZ9bG","enterTo":"FadeAnimation-vue_enterTo_1Yeml","leave":"FadeAnimation-vue_leave_1dRcN","enter":"FadeAnimation-vue_enter_3CQUQ","leaveTo":"FadeAnimation-vue_leaveTo_3K86N"};
+module.exports = {"enterActive":"FadeAnimation_enterActive_3b9fV","leaveActive":"FadeAnimation_leaveActive_JbvDC","enterTo":"FadeAnimation_enterTo_1dnUf","leave":"FadeAnimation_leave_3mVR2","enter":"FadeAnimation_enter_2V7L7","leaveTo":"FadeAnimation_leaveTo_1W08A"};
 
 /***/ }),
 
@@ -7371,7 +7371,7 @@ module.exports = {"enterActive":"FadeAnimation-vue_enterActive_EhIaQ","leaveActi
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vuePagination":"VuePagination-vue_vuePagination_3V2M6","label":"VuePagination-vue_label_3lyNG","prev":"VuePagination-vue_prev_DuOHt","next":"VuePagination-vue_next_21gy-","disabled":"VuePagination-vue_disabled_2vV1J"};
+module.exports = {"vuePagination":"VuePagination_vuePagination_2cQdY","label":"VuePagination_label_2kHlm","prev":"VuePagination_prev_GW0a8","next":"VuePagination_next_1m6Bg","disabled":"VuePagination_disabled_3qIxB"};
 
 /***/ }),
 
@@ -7477,7 +7477,7 @@ module.exports = InterceptorManager;
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueDataTable":"VueDataTable-vue_vueDataTable_1VVp2","noResults":"VueDataTable-vue_noResults_39LsJ"};
+module.exports = {"vueDataTable":"VueDataTable_vueDataTable_4tsHW","noResults":"VueDataTable_noResults_3irSk"};
 
 /***/ }),
 
@@ -7495,7 +7495,7 @@ module.exports = {"vueDataTable":"VueDataTable-vue_vueDataTable_1VVp2","noResult
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueMarkdown":"VueMarkdown-vue_vueMarkdown_1CYAG"};
+module.exports = {"vueMarkdown":"VueMarkdown_vueMarkdown_32cMq"};
 
 /***/ }),
 
@@ -7503,7 +7503,7 @@ module.exports = {"vueMarkdown":"VueMarkdown-vue_vueMarkdown_1CYAG"};
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueDataTableRow":"VueDataTableRow-vue_vueDataTableRow_Yrra2","column":"VueDataTableRow-vue_column_14S-_"};
+module.exports = {"vueDataTableRow":"VueDataTableRow_vueDataTableRow_3QZbO","column":"VueDataTableRow_column_HFsYs"};
 
 /***/ }),
 
@@ -20802,7 +20802,7 @@ var LibraryModule = _objectSpread({}, components, {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueTab":"VueTabItem-vue_vueTab_FuDR3"};
+module.exports = {"vueTab":"VueTabItem_vueTab_3IYQo"};
 
 /***/ }),
 
@@ -20853,4 +20853,4 @@ module.exports = isSymbol;
 
 /******/ });
 });
-//# sourceMappingURL=vue-starter-ui.umd.js.map
+//# sourceMappingURL=vue-ui.umd.js.map
