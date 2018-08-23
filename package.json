@@ -5,11 +5,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:bundle": "vue-cli-service build --target lib --name vue-starter-ui src/main.ts",
+    "build:bundle": "vue-cli-service build --target lib --name vue-ui src/main.ts",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
-  "main": "dist/vue-starter-ui.common.js",
+  "main": "dist/vue-ui.common.js",
   "dependencies": {
     "animejs": "^2.2.0",
     "js-cookie": "^2.2.0",
