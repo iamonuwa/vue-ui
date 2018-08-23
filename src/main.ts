@@ -10,6 +10,7 @@ import VueGridItem from './app/shared/components/VueGridItem/VueGridItem.vue';
 import VueButton from './app/shared/components/VueButton/VueButton.vue';
 import VueLoader from './app/shared/components/VueLoader/VueLoader.vue';
 import VuePanel from './app/shared/components/VuePanel/VuePanel.vue';
+import VueNavBar from './app/shared/components/VueNavBar/VueNavBar.vue';
 import VuePanelHeader from './app/shared/components/VuePanel/VuePanelHeader/VuePanelHeader.vue';
 import VuePanelBody from './app/shared/components/VuePanel/VuePanelBody/VuePanelBody.vue';
 import VuePanelFooter from './app/shared/components/VuePanel/VuePanelFooter/VuePanelFooter.vue';
