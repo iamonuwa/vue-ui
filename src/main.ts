@@ -58,6 +58,7 @@ const components = {
   VuePanelHeader,
   VuePanelBody,
   VuePanelFooter,
+  VueNavBar,
   VueInput,
   VueCollapse,
   VueModal,
