@@ -5,11 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:bundle": "vue-cli-service build --target lib --name vue-ui src/main.ts",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "build:bundle": "vue-cli-service build --target lib --name vue-ui src/main.ts",
+    "test:unit": "vue-cli-service test:unit",
+    "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook",
+    "build:storybook": "vue-cli-service build:storybook -c config/storybook"
   },
-  "main": "dist/vue-ui.common.js",
   "dependencies": {
     "animejs": "^2.2.0",
     "js-cookie": "^2.2.0",
@@ -24,6 +25,8 @@
     "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^4.0.0-alpha.16",
+    "@storybook/addon-links": "^4.0.0-alpha.16",
     "@types/chai": "^4.1.0",
     "@types/mocha": "^5.2.5",
     "@types/webpack-env": "^1.13.6",
@@ -39,6 +42,8 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "typescript": "^3.0.0",
+    "vue-cli-plugin-storybook": "^0.4.4",
     "vue-template-compiler": "^2.5.17"
-  }
+  },
+  "main": "dist/vue-ui.common.js"
 }
