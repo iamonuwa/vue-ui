@@ -4503,7 +4503,7 @@ __webpack_require__("9c6c")('fill');
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"vueNavBar":"VueNavBar-vue_vueNavBar_2YBu0","bg":"VueNavBar-vue_bg_2zk3L","in":"VueNavBar-vue_in_3m7eM","accent":"VueNavBar-vue_accent_36EzZ","brand":"VueNavBar-vue_brand_P47DC","menu":"VueNavBar-vue_menu_vbjRi","hamburger":"VueNavBar-vue_hamburger_3aHdG","inner":"VueNavBar-vue_inner_YjfvO","box":"VueNavBar-vue_box_1LfLl","active":"VueNavBar-vue_active_25HIE"};
+module.exports = {"vueNavBar":"VueNavBar_vueNavBar_7J7JZ","bg":"VueNavBar_bg_2-yaQ","in":"VueNavBar_in_2CCUB","accent":"VueNavBar_accent_29fbw","brand":"VueNavBar_brand_2HenV","menu":"VueNavBar_menu_1Csw2","hamburger":"VueNavBar_hamburger_1Y5yA","inner":"VueNavBar_inner_E166L","box":"VueNavBar_box_1z5RG","active":"VueNavBar_active_y4mZm"};
 
 /***/ }),
 
@@ -7534,6 +7534,18 @@ __webpack_require__.r(__webpack_exports__);
 // EXTERNAL MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 var setPublicPath = __webpack_require__("1eb2");
 
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.function.name.js
+var es6_function_name = __webpack_require__("7f7f");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.array.iterator.js
+var es6_array_iterator = __webpack_require__("cadf");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.object.keys.js
+var es6_object_keys = __webpack_require__("456d");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom.iterable.js
+var web_dom_iterable = __webpack_require__("ac6a");
+
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/builtin/es6/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
@@ -7569,22 +7581,6 @@ function _objectSpread(target) {
 
   return target;
 }
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.function.name.js
-var es6_function_name = __webpack_require__("7f7f");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.array.iterator.js
-var es6_array_iterator = __webpack_require__("cadf");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.object.keys.js
-var es6_object_keys = __webpack_require__("456d");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom.iterable.js
-var web_dom_iterable = __webpack_require__("ac6a");
-
-// EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
-var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
-var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
-
 // CONCATENATED MODULE: ./node_modules/vee-validate/dist/vee-validate.esm.js
 /**
   * vee-validate v2.1.0-beta.7
@@ -15341,6 +15337,10 @@ var index_esm = {
 /* harmony default export */ var vee_validate_esm = (index_esm);
 
 
+// EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
+var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
+var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
+
 // CONCATENATED MODULE: ./node_modules/vuex/dist/vuex.esm.js
 /**
  * vuex v3.0.1
@@ -20865,7 +20865,6 @@ VueToggle_component.options.__file = "VueToggle.vue"
 
 
 
-
 var components = {
   VueToggle: VueToggle,
   VueDataTable: VueDataTable,
@@ -20900,9 +20899,6 @@ var components = {
   VueDateRangePicker: VueDateRangePicker,
   VueGridRow: VueGridRow
 };
-Object.keys(components).forEach(function (name) {
-  external_commonjs_vue_commonjs2_vue_root_Vue_default.a.component(name, components[name]);
-});
 
 var LibraryModule = _objectSpread({}, components, {
   install: function install(Vue) {

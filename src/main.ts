@@ -2,7 +2,6 @@ import Vue             from 'vue';
 import VeeValidate     from 'vee-validate';
 import { Store }       from 'vuex';
 import { store }       from './app/store';
-import { IState }      from './app/state';
 import { HttpService } from './app/shared/services/HttpService';
 
 import VueGrid from './app/shared/components/VueGrid/VueGrid.vue';
@@ -76,10 +75,6 @@ const components = {
   VueDateRangePicker,
   VueGridRow,
 }
-
-Object.keys(components).forEach(name => {
-  Vue.component(name, components[name]);
-});
 
 const LibraryModule = {
   ...components,

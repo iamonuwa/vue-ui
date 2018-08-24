@@ -14,8 +14,7 @@
     "baseUrl": ".",
     "types": [
       "node",
-      "mocha",
-      "chai"
+      "jest"
     ],
     "paths": {
       "@/*": [
