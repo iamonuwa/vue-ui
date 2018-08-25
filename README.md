@@ -1,26 +1,24 @@
-# vue-starter-ui
+# vue-ui
 
-## Project setup
-```
-npm install
-```
+> UI library for vue, forked from [vue-starter template](https://github.com/devCrossNet/vue-starter)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+![](./images/example1.png)
 
-### Compiles and minifies for production
+## Installation
 ```
-npm run build
+npm install vue-ui
 ```
+vue-ui can be used as a module in both CommonJS and ES modular environments.
 
-### Lints and fixes files
-```
-npm run lint
+### After that, you can use it in your Vue components:
+
+```html
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
+## Changelog
+
+See the GitHub [release history](https://github.com/gwenaelp/vue-ui/releases).
+
+## Contributing
+
+See [CONTRIBUTING.md](.github/CONTRIBUTING.md).
