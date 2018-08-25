@@ -217,8 +217,8 @@
     data(): IData {
       return {
         selecting:         'date',
-        d: window['$d'].bind(window['i18n']),
-        t: window['$t'].bind(window['i18n']),
+        d: window['$d'],
+        t: window['$t'],
         currentMonth:      null,
         currentYear:       null,
         selectedDayOfWeek: null,

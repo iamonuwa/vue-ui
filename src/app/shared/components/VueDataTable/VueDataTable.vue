@@ -155,7 +155,7 @@
     },
     data(): any {
       return {
-        t: window['$t'].bind(window['i18n']),
+        t: window['$t'],
 
         sortKey:       null,
         sortDirection: 'asc',

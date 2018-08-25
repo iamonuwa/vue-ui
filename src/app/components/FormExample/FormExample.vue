@@ -136,7 +136,7 @@
     components:    { VueButton, VueGridItem, VueGridRow, VueCheckbox, VueSelect, VueInput },
     data(): any {
       return {
-        t: window['$t'].bind(window['i18n']),
+        t: window['$t'],
 
         form:           {
           firstname:   '',

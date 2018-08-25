@@ -96,13 +96,14 @@
     },
     data(): any {
       return {
+        d: window['$d'],
         show:         false,
         selectedDate: null,
       };
     },
     computed:   {
       inputValue() {
-        return this.date === null ? '' : this.$d(this.date, 'datePicker');
+        return this.date === null ? '' : this.d(this.date, 'datePicker');
       },
       date() {
         if (this.currentDate) {
