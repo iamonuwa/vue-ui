@@ -28,6 +28,7 @@ import VueSelect from './app/shared/components/VueSelect/VueSelect.vue';
 import VueCalendar from './app/shared/components/VueCalendar/VueCalendar.vue';
 import VueDatePicker from './app/shared/components/VueDatePicker/VueDatePicker.vue';
 import VueDateRangePicker from './app/shared/components/VueDateRangePicker/VueDateRangePicker.vue';
+import VueNotificationStack from './app/shared/components/VueNotificationStack/VueNotificationStack.vue';
 import { addNotification, INotification } from './app/shared/components/VueNotificationStack/utils';
 import VueMarkdown from './app/shared/components/VueMarkdown/VueMarkdown.vue';
 import VueGridRow from './app/shared/components/VueGridRow/VueGridRow.vue';
@@ -65,6 +66,7 @@ const components = {
   VueTabItem,
   VueCheckbox,
   VueTooltip,
+  VueNotificationStack,
   VueSlider,
   VueAccordion,
   VueAccordionItem,
