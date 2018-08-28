@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "cz": "npx git-cz",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -40,6 +41,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "7.0.0-bridge.0",
     "chai": "^4.1.2",
+    "commitizen": "^2.10.1",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "ts-jest": "^23.0.0",
