@@ -2,7 +2,6 @@ import Vue                      from 'vue';
 import Vuex, { Store }          from 'vuex';
 import { DefaultState, IState } from './state';
 import { AppModule }            from './app/module';
-import { CounterModule }        from './counter/module';
 
 Vue.use(Vuex);
 
@@ -34,4 +33,3 @@ export const store: Store<IState> = new Vuex.Store(
 );
 
 store.registerModule(['app'], AppModule, { preserveState: true });
-store.registerModule(['counter'], CounterModule, { preserveState: true });

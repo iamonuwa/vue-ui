@@ -1,7 +1,4 @@
-import Vue             from 'vue';
 import VeeValidate     from 'vee-validate';
-import { Store }       from 'vuex';
-import { store }       from './app/store';
 import { HttpService } from './app/shared/services/HttpService';
 
 import VueGrid from './app/shared/components/VueGrid/VueGrid.vue';
@@ -81,8 +78,11 @@ const components = {
 const LibraryModule = {
   ...components,
 
-  install(Vue) {
-    HttpService.store = store;
+  install(Vue, options) {
+    if(!options.store) {
+      console.error('You must provide the vuex store as an option of Vue.use(\'VueUi\')');
+    }
+    HttpService.store = options.store;
     Vue.use(VeeValidate, { inject: false });
     // Register components with vue
     Object.keys(components).forEach(name => {

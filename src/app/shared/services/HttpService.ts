@@ -1,9 +1,7 @@
 import axios, { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
-import { Store }                                                               from 'vuex';
-import { IState }                                                              from '../../state';
 
 export interface IHttpService extends AxiosInstance {
-  store?: Store<IState>;
+  store?: any;
 }
 
 export const HttpService: IHttpService = axios.create();
