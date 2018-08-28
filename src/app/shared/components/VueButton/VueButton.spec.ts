@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils';
-import VueButton                 from '../../src/app/shared/components/VueButton/VueButton.vue';
+import VueButton                 from './VueButton.vue';
 
 const localVue = createLocalVue();
 
