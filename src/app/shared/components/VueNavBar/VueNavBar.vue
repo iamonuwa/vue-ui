@@ -118,6 +118,11 @@
       document.removeEventListener('click', this.handleDocumentClick);
       document.removeEventListener('touchstart', this.handleDocumentClick);
     },
+    watch:{
+      $route (){
+        this.isOpen = false;
+      }
+    },
   };
 </script>
 
