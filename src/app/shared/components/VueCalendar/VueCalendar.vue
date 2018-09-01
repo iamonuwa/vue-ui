@@ -2,13 +2,13 @@
   <div :class="$style.calendar">
     <div :class="$style.header">
       <h4 @click="setSelecting('year')">{{ selectedYear }}</h4>
-      <h5 @click="setSelecting('date')">{{ d(calculatedDate, 'calendarHeader') }}</h5>
+      <h5 @click="setSelecting('date')">{{ $d(calculatedDate, 'calendarHeader') }}</h5>
     </div>
 
     <div :class="$style.body" v-if="selecting === 'date'">
       <div :class="$style.date">
         <div :class="$style.arrow" @click="setByMonth(currentMonth - 1)"></div>
-        <div :class="$style.currentDate">{{ d(new Date(currentYear, currentMonth, 1), 'calendarNav') }}</div>
+        <div :class="$style.currentDate">{{ $d(new Date(currentYear, currentMonth, 1), 'calendarNav') }}</div>
         <div :class="$style.arrow" @click="setByMonth(currentMonth + 1)"></div>
       </div>
 
@@ -58,8 +58,6 @@ import VueButton from '../VueButton/VueButton.vue';
 import chunk from 'lodash/chunk';
 
 interface IData {
-  d: any;
-  t: any;
   selecting: string;
   currentMonth: number;
   currentYear: number;
@@ -130,7 +128,6 @@ export default {
         this.firstDayOfWeek;
       const daysInMonth =
         32 - new Date(this.currentYear, this.currentMonth, 32).getDate();
-      const today = new Date();
 
       if (paddingLeft >= 0) {
         days = days.concat(Array(paddingLeft).fill(null));
@@ -158,22 +155,27 @@ export default {
         let disabled: boolean = this.dayDisabled(day, date);
         let selected: boolean =
           date.getTime() === this.calculatedDate.getTime();
+
         if (this.startDate) {
           disabled = date.getTime() < this.startDate.getTime();
           selected =
             date.getTime() >= this.startDate.getTime() &&
             date.getTime() <= this.calculatedDate.getTime();
         }
+
         if (this.endDate) {
           selected =
             date.getTime() <= this.endDate.getTime() &&
             date.getTime() >= this.calculatedDate.getTime();
         }
+
         if (day === null) {
           selected = false;
         }
+
         return { day, currentDay, selected, disabled } as IDay;
       });
+
       return chunk(dayObjects, 7);
     },
     years(): IYear[] {
@@ -201,13 +203,13 @@ export default {
     },
     weekdays(): string[] {
       const weekdays: string[] = [
-        this.t('components.calendar.sunday.short' /* S */),
-        this.t('components.calendar.monday.short' /* M */),
-        this.t('components.calendar.tuesday.short' /* T */),
-        this.t('components.calendar.wednesday.short' /* W */),
-        this.t('components.calendar.thursday.short' /* T */),
-        this.t('components.calendar.friday.short' /* F */),
-        this.t('components.calendar.saturday.short' /* S */)
+        this.$t('components.calendar.sunday.short' /* S */),
+        this.$t('components.calendar.monday.short' /* M */),
+        this.$t('components.calendar.tuesday.short' /* T */),
+        this.$t('components.calendar.wednesday.short' /* W */),
+        this.$t('components.calendar.thursday.short' /* T */),
+        this.$t('components.calendar.friday.short' /* F */),
+        this.$t('components.calendar.saturday.short' /* S */)
       ];
       const orderedDays: string[] = [];
       let startDay: number = this.firstDayOfWeek;
@@ -231,8 +233,6 @@ export default {
   data(): IData {
     return {
       selecting: 'date',
-      d: window['$d'],
-      t: window['$t'],
       currentMonth: null,
       currentYear: null,
       selectedDayOfWeek: null,
